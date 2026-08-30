@@ -31,6 +31,11 @@ Making a new release? Simply add the new header with the version and date undern
 
 ## Unreleased
 
+* Fixed `rojo serve` crashing when queued filesystem events refer to paths whose ancestors have already been removed (SE370-Team1 fork, from [#1319]). ([#1314])
+
+[#1314]: https://github.com/rojo-rbx/rojo/issues/1314
+[#1319]: https://github.com/rojo-rbx/rojo/pull/1319
+
 ## [7.7.1] (October 1st, 2026)
 
 * Fixed `$path` values that point outside the project folder failing to match `syncRule`s on Windows, which broke `rojo sourcemap` with a "could not be turned into a Roblox Instance" error. ([#1290])
